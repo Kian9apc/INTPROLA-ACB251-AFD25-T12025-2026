@@ -1,12 +1,12 @@
-import java.util.Scanner;
+// Program to print a text 5 times
 
-class LoopExercise {
+class Loop01 {
   public static void main(String[] args) {
-    Scanner myObj = new Scanner(System.in);
-    System.out.println("Enter first number");
 
-    String userNumber = myObj.nextLine();
-    System.out.println("User first number is: " + userNumber);
+    int n = 5;
+    // for loop  
+    for (int i = 1; i <= n; ++i) {
+      System.out.println("Java is fun");
+    }
   }
 }
-

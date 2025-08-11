@@ -1,11 +1,12 @@
+import java.util.Scanner;  // Import the Scanner class
 
-class Main {
+class LoopExercise {
   public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter username");
 
-    int n = 5;
-    // for loop  
-    for (int i = 1; i <= n; ++i) {
-      System.out.println("Java is fun");
-    }
+    String userName = myObj.nextLine();  // Read user input
+    System.out.println("Username is: " + userName);  // Output user input
   }
 }
+
