@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class TwoInputs {
+public class TwoInputs {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -16,6 +16,7 @@ class TwoInputs {
         System.out.println("When added together: " + (age + favouriteNumber));
         System.out.println("When subtracted together: " + (age - favouriteNumber));
         System.out.println("When multiplied together: " + (age * favouriteNumber));
-        System.out.println("Di ko alam pano sa division huhu");
+        System.out.println("When divided together: " + (age / favouriteNumber));
+        
     }
 }
