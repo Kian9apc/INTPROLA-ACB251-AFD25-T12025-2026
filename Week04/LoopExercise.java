@@ -1,12 +1,21 @@
-import java.util.Scanner;  // Import the Scanner class
+import java.util.Scanner;
 
-class LoopExercise {
-  public static void main(String[] args) {
-    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-    System.out.println("Enter username");
+public class LoopExercise {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    String userName = myObj.nextLine();  // Read user input
-    System.out.println("Username is: " + userName);  // Output user input
-  }
+        System.out.print("Enter the first number: ");
+        int start = input.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int end = input.nextInt();
+
+        System.out.println("Even numbers from " + start + " to " + end + ":");
+
+        for (int i = start; i <= end; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
 }
-
