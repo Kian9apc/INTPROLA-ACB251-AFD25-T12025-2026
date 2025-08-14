@@ -35,4 +35,15 @@ public class OddNumberFinder {
             i++;
         }
     }
+    public void findAndDisplayOdds3(int start, int end) {
+    System.out.println("\nOdd numbers in the range " + start + " to " + end + " are:");
+
+        int i = start;
+        do {
+            if (i % 2 != 0) {
+            System.out.println(i);
+            }
+            i++;
+        } while (i <= end);
+    }
 }
