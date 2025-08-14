@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LoopExercise {
+public class LoopExerciseToday {
  
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class LoopExercise {
 
         OddNumberFinder finder = new OddNumberFinder();
 
-        finder.findAndDisplayOdds3(startPoint, endPoint);
+        finder.findAndDisplayOdds1(startPoint, endPoint);
 
         inputScanner.close();
     }
