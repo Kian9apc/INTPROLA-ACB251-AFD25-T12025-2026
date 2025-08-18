@@ -1,32 +1,27 @@
 public class WorkerQuiz1 {
 
-    public void processRange(int start, int end) {
+    public void evenOddIdentify(int start, int end) {
         int a = start;
 
-        // While loop: check odd numbers and display if prime
         while (a <= end) {
-            if (a % 2 != 0) { // odd check
-                displayIfPrime(a);
+            if (a % 2 != 0) {
+                if (isPrime(a)) {
+                    System.out.println(a + " ODD TSAKA PRIME");
+                } else {
+                    System.out.println(a + " ODD");
+                }
             }
             a++;
         }
 
-        // For loop: check even numbers divisible by 3
-        for (int i = start; i <= end; i++) {
-            if (i % 2 != 0) { // Odd numbers
-                System.out.println(i + " is odd.");
-                displayIfPrime(i);
-            } else if (i % 3 == 0) { // Even numbers divisible by 3
-                System.out.println(i + " is even and divisible by 3.");
-                displayIfPrime(i);
+        for (int b = start; b <= end; b++) {
+            if (b % 2 == 0) {
+                if (b % 3 == 0) {
+                    System.out.println(b + " EVEN TSAKA DEVISIBLE SA 3");
+                } else {
+                    System.out.println(b + " EVEN");
+                }
             }
-        }
-    }
-
-    // Separated method to display prime info
-    private void displayIfPrime(int num) {
-        if (isPrime(num)) {
-            System.out.println(num + " is odd and a prime number.");
         }
     }
 

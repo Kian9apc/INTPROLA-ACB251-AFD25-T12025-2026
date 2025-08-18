@@ -13,7 +13,7 @@ public class CallerQuiz1 {
         int end = input.nextInt();
 
         WorkerQuiz1 worker = new WorkerQuiz1();
-        worker.WorkerQuiz1(start, end);
+        worker.evenOddIdentify(start, end);
 
         input.close();
     }
