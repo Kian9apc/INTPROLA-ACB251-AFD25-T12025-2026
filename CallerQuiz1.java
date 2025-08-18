@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class CallerQuiz1 {
 
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter start number: ");
@@ -11,9 +12,8 @@ public class CallerQuiz1 {
         System.out.print("Enter end number: ");
         int end = input.nextInt();
 
-        // Create object of WorkerQuiz1
         WorkerQuiz1 worker = new WorkerQuiz1();
-        worker.processRange(start, end);
+        worker.WorkerQuiz1(start, end);
 
         input.close();
     }
